@@ -2,6 +2,12 @@
   "expo": {
     "name": "Sapphire Ledger",
     "slug": "sapphire-ledger",
+
+    "owner": "anurags221s-organization",
+    "cli": {
+      "appVersionSource": "remote"
+    },
+
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,26 +23,26 @@
 
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.yourname.sapphireledger",
+      "bundleIdentifier": "com.anurag.sapphireledger",
       "buildNumber": "1",
       "infoPlist": {
-        "NSFaceIDUsageDescription": "This app uses Face ID for secure access to your financial data."
+        "NSFaceIDUsageDescription": "This app uses Face ID for secure access to your financial data.",
+        "NSCameraUsageDescription": "Camera is used for scanning receipts.",
+        "NSPhotoLibraryUsageDescription": "Photos are used to select receipts."
       }
     },
 
     "android": {
+      "package": "com.anurag.sapphireledger",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#000000"
       },
-      "package": "com.yourname.sapphireledger",
-      "versionCode": 1,
       "permissions": [
         "INTERNET",
-        "USE_FINGERPRINT",
         "USE_BIOMETRIC",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE",
+        "USE_FINGERPRINT",
         "CAMERA"
       ]
     },
@@ -47,7 +53,8 @@
         {
           "android": {
             "compileSdkVersion": 34,
-            "targetSdkVersion": 34
+            "targetSdkVersion": 34,
+            "minSdkVersion": 23
           },
           "ios": {
             "deploymentTarget": "13.0"
