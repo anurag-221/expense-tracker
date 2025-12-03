@@ -33,6 +33,7 @@ yarn.lock
 pnpm-lock.yaml
 
 # --- React Native / APK Related ---
+/android
 android/.gradle/
 android/app/build/
 android/build/

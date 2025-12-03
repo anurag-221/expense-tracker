@@ -11,6 +11,7 @@ export default {
     icon: "./assets/icon.png",
     scheme: "sapphireledger",
     userInterfaceStyle: "automatic",
+    jsEngine: "hermes",
 
     cli: {
       appVersionSource: "remote"
@@ -44,9 +45,11 @@ export default {
       deploymentTarget: "15.1",
       infoPlist: {
         NSFaceIDUsageDescription:
-          "This app uses Face ID for secure access to your financial data.",
-        NSCameraUsageDescription: "Camera is used for scanning receipts.",
-        NSPhotoLibraryUsageDescription: "Photos are used to select receipts."
+          "This app uses Face ID for secure access to your data.",
+        NSCameraUsageDescription:
+          "Camera is used for scanning receipts.",
+        NSPhotoLibraryUsageDescription:
+          "Photos are used for selecting receipts."
       }
     },
 
@@ -65,8 +68,7 @@ export default {
         }
       ],
       "expo-local-authentication",
-      "expo-notifications",
-      "expo-secure-store"
+      "expo-notifications"
     ],
 
     extra: {
