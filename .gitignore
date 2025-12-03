@@ -1,10 +1,66 @@
-node_modules
-.env
-.DS_Store
-dist
-build
+# --- React (CRA / Vite / Next Build Outputs) ---
+node_modules/
+dist/
+build/
+.cache/
+.temp/
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
 *.log
-.idea
-.vscode
-.eslintcache
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+
+# --- Environment Files ---
+.env
+.env.*.local
+*.env.local
+
+# --- Editor Files ---
+.vscode/
+.idea/
+*.swp
+
+# --- NPM Package Locks (optional) ---
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# --- React Native / APK Related ---
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+android/keystores/
+android/.idea/
+android/captures/
+
+# APK / AAB generated files
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Metro bundler cache
 .expo/
+.expo-shared/
+.expo/web-build/
+.expo/packager-info.json
+
+# Watchman
+.watchmanconfig
+
+# iOS (if using React Native)
+ios/Pods/
+ios/build/
+*.xcworkspace
+*.xcuserdatad/
+*.xcuserstate
+*.xcodeproj/**/*.xccheckout
+*.xcodeproj/**/project.xcworkspace
