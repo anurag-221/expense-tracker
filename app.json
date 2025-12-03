@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Sapphire Ledger",
+    "slug": "sapphire-ledger",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A1132"
+    },
+
+    "assetBundlePatterns": ["**/*"],
+
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.sapphireledger",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "This app uses Face ID for secure access to your financial data."
+      }
+    },
+
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.yourname.sapphireledger",
+      "versionCode": 1,
+      "permissions": [
+        "INTERNET",
+        "USE_FINGERPRINT",
+        "USE_BIOMETRIC",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA"
+      ]
+    },
+
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34
+          },
+          "ios": {
+            "deploymentTarget": "13.0"
+          }
+        }
+      ],
+      "expo-local-authentication",
+      "expo-notifications"
+    ],
+
+    "extra": {
+      "eas": {
+        "projectId": "54864cb5-947d-4dbf-9c6f-f3c16812d85e"
+      }
+    }
+  }
+}
