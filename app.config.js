@@ -2,6 +2,7 @@ export default {
   expo: {
     name: "Sapphire Ledger",
     slug: "sapphire-ledger",
+
     owner: "anurags221s-organization",
 
     version: "1.0.0",
@@ -64,7 +65,8 @@ export default {
         }
       ],
       "expo-local-authentication",
-      "expo-notifications"
+      "expo-notifications",
+      "expo-secure-store"
     ],
 
     extra: {
